@@ -44,7 +44,7 @@
     .vehicle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
     .vehicle-card { background: #141414; border: 1px solid #252525; border-radius: 10px; padding: 20px 14px; text-align: center; transition: border-color .15s, background .15s; cursor: pointer; display: block; }
     .vehicle-card:hover { border-color: #e8a000; background: #1c1800; }
-    .vehicle-card .v-icon { font-size: 2.2rem; margin-bottom: 8px; display: block; }
+    .vehicle-card .v-icon { display: block; width: 100%; height: 80px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; }
     .vehicle-card h3 { color: #fff; font-size: .85rem; margin: 0 0 4px; font-weight: 700; line-height: 1.3; }
     .vehicle-card p { color: #888; font-size: .75rem; margin: 0; }
 
@@ -52,7 +52,7 @@
     .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
     .cat-card { background: #141414; border: 1px solid #252525; border-radius: 8px; padding: 16px 12px; text-align: center; transition: border-color .15s; display: block; }
     .cat-card:hover { border-color: #e8a000; }
-    .cat-card .c-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .cat-card .c-icon { display: block; width: 100%; height: 64px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; }
     .cat-card span { color: #ccc; font-size: .85rem; font-weight: 600; }
 
     /* ── Brand banner ── */
@@ -147,57 +147,56 @@
 <!-- ── SHOP BY VEHICLE ─────────────────────────────────────────────────── -->
 <div class="section" id="by-vehicle">
   <div class="section-header">
-    <h2>🚗 Shop by Vehicle</h2>
+    <h2>Shop by Vehicle</h2>
     <p>Select your rig to see curated Bartact and Bull Strap accessories matched to your exact model.</p>
   </div>
   <div class="vehicle-grid">
     <a href="/jeep-wrangler-jl-jlu.html" class="vehicle-card">
-      <span class="v-icon">🟠</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-grab-handles-paracord-grab-handles-for-jeep-wrangler-2018-jl-jlu-rear-tailgate-window-made-in-usa-550-paracord-bartact-1193240832.jpg?v=1758198278" alt="Jeep Wrangler JL JLU grab handles" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Jeep Wrangler JL &amp; JLU</h3>
       <p>2018–2026</p>
     </a>
     <a href="/jeep-wrangler-jk-jku.html" class="vehicle-card">
-      <span class="v-icon">🔶</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-navy-navy-overstock-2007-2012-jk-jku-front-seat-cover-pair-no-srs-airbag-click-for-more-options-1225012036.png?v=1772664070" alt="Jeep Wrangler JK JKU seat covers" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Jeep Wrangler JK &amp; JKU</h3>
       <p>2007–2018</p>
     </a>
     <a href="/jeep-gladiator.html" class="vehicle-card">
-      <span class="v-icon">🛻</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-grab-handles-red-front-pair-paracord-grab-handles-bolt-on-for-jeep-wrangler-jl-jlu-2018-made-in-usa-550-paracord-bartact-1193240786.jpg?v=1765230397" alt="Jeep Gladiator grab handles" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Jeep Gladiator JT</h3>
       <p>2019–2026</p>
     </a>
     <a href="/ford-bronco.html" class="vehicle-card">
-      <span class="v-icon">🦬</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bartact-bags-and-pouches-black-no-bronco-accessories-visor-covers-w-molle-for-ford-bronco-2021-2022-2023-full-size-sun-visor-panel-storage-bartact-pat-pending-front-pair-3064254296887.jpg?v=1762460491" alt="Ford Bronco accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Ford Bronco</h3>
       <p>2021–2026 Full-Size</p>
     </a>
     <a href="/ford-f250-f350.html" class="vehicle-card">
-      <span class="v-icon">🔵</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bull-strap-motor-vehicle-suspension-parts-single-double-triple-combo-limit-strap-clevis-29880853725227.jpg?v=1762459529" alt="Ford F-250 F-350 accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Ford F-250 / F-350</h3>
       <p>Super Duty</p>
     </a>
     <a href="/ram-2500-3500.html" class="vehicle-card">
-      <span class="v-icon">🐏</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0739/5930/9585/files/fcd79da4b43904526a0ad063ab680755L_db61f909-5aac-4f4c-86b2-b9ceb4494fc4.jpg?v=1788467840" alt="RAM 2500 3500 accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>RAM 2500 / 3500</h3>
       <p>Heavy Duty</p>
     </a>
     <a href="/toyota-tacoma.html" class="vehicle-card">
-      <span class="v-icon">🟢</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-shades-yes-red-front-tactical-sun-shade-for-jeep-gladiator-2019-2025-w-optional-molle-storage-pat-pending-bartact-33697114456107.jpg?v=1768848652" alt="Toyota Tacoma accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Toyota Tacoma</h3>
       <p>2005–2026</p>
     </a>
     <a href="/toyota-4runner.html" class="vehicle-card">
-      <span class="v-icon">⛰️</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0739/5930/9585/files/fcd79da4b43904526a0ad063ab680755L_db61f909-5aac-4f4c-86b2-b9ceb4494fc4.jpg?v=1788467840" alt="Toyota 4Runner accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Toyota 4Runner</h3>
       <p>5th Gen (2010+)</p>
     </a>
     <a href="https://bullstrap.com/collections/bull-strap" rel="sponsored" target="_blank" class="vehicle-card">
-      <span class="v-icon">🏔️</span>
       <h3>Toyota Tundra</h3>
       <p>Bull Strap Parts →</p>
     </a>
     <a href="https://bullstrap.com/collections/bull-strap" rel="sponsored" target="_blank" class="vehicle-card">
-      <span class="v-icon">🔭</span>
+      <img class="v-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bull-strap-motor-vehicle-suspension-parts-single-double-triple-combo-limit-strap-clevis-29880853725227.jpg?v=1762459529" alt="Toyota Sequoia accessories" loading="eager" onerror="this.style.opacity=0.3">
       <h3>Toyota Sequoia</h3>
       <p>Bull Strap Parts →</p>
     </a>
@@ -209,64 +208,64 @@
 <!-- ── SHOP BY CATEGORY ─────────────────────────────────────────────────── -->
 <div class="section" id="by-category">
   <div class="section-header">
-    <h2>🗂️ Shop by Category</h2>
+    <h2>Shop by Category</h2>
     <p>Find accessories by type across all vehicle platforms.</p>
   </div>
   <div class="cat-grid">
     <a href="/best-suspension-upgrades.html" class="cat-card">
-      <span class="c-icon">⚙️</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bull-strap-motor-vehicle-suspension-parts-diy-weld-on-limit-strap-tabs-1237903031.png?v=1778544310" alt="Suspension and lift kits" loading="eager" onerror="this.style.opacity=0.3">
       <span>Suspension &amp; Lift</span>
     </a>
     <a href="https://bartact.com/collections/seat-covers" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">💺</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-black-navy-overstock-rear-bench-tactical-seat-covers-for-jeep-gladiator-2019-all-models-with-fold-down-armrest-only-click-for-more-options-1224994849.png?v=1772655190" alt="Seat covers" loading="eager" onerror="this.style.opacity=0.3">
       <span>Seat Covers</span>
     </a>
     <a href="https://bartact.com/collections/grab-handles-for-jeep-wrangler-gladiator-ford-bronco-utvs-buggies-rails" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">✊</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-grab-handles-paracord-grab-handles-for-jeep-wrangler-2018-jl-jlu-rear-tailgate-window-made-in-usa-550-paracord-bartact-1193240832.jpg?v=1758198278" alt="Grab handles" loading="eager" onerror="this.style.opacity=0.3">
       <span>Grab Handles</span>
     </a>
     <a href="https://bartact.com/collections/molle-accessories" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🎒</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-molle-accessories-black-molle-attachments-bartact-pals-molle-t-bar-heavy-duty-repair-female-male-buckle-combo-pair-of-2-copy-1174047423.jpg?v=1762463274" alt="MOLLE and storage" loading="eager" onerror="this.style.opacity=0.3">
       <span>MOLLE &amp; Storage</span>
     </a>
     <a href="https://bartact.com/collections/wrangliator-door-storage-bags" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🚪</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bartact-bags-and-pouches-black-cordura-nylon-1000d-medium-extreme-duffel-bag-21-x-14-x-14-5-bartact-29023051579435.jpg?v=1762457127" alt="Door storage bags" loading="eager" onerror="this.style.opacity=0.3">
       <span>Door Storage Bags</span>
     </a>
     <a href="https://bartact.com/collections/visor-covers" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🕶️</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bartact-bags-and-pouches-black-no-bronco-accessories-visor-covers-w-molle-for-ford-bronco-2021-2022-2023-full-size-sun-visor-panel-storage-bartact-pat-pending-front-pair-3064254296887.jpg?v=1762460491" alt="Visor covers" loading="eager" onerror="this.style.opacity=0.3">
       <span>Visor Covers</span>
     </a>
     <a href="https://bartact.com/collections/jeep-wrangler-suspension-limit-straps" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🔗</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bull-strap-motor-vehicle-suspension-parts-single-double-triple-combo-limit-strap-clevis-29880853725227.jpg?v=1762459529" alt="Limit straps" loading="eager" onerror="this.style.opacity=0.3">
       <span>Limit Straps</span>
     </a>
     <a href="https://bullstrap.com/collections/carli-suspension" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🏗️</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bull-strap-motor-vehicle-suspension-parts-diy-weld-on-limit-strap-tabs-1237903031.png?v=1778544310" alt="Carli suspension" loading="eager" onerror="this.style.opacity=0.3">
       <span>Carli Suspension</span>
     </a>
     <a href="https://bartact.com/collections/recovery-gear-winch-accessories" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🪝</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bull-strap-motor-vehicle-suspension-parts-single-double-triple-combo-limit-strap-clevis-29880853725227.jpg?v=1762459529" alt="Recovery gear" loading="eager" onerror="this.style.opacity=0.3">
       <span>Recovery Gear</span>
     </a>
     <a href="https://bartact.com/collections/sun-shades-w-molle-option" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">☀️</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-shades-yes-red-front-tactical-sun-shade-for-jeep-gladiator-2019-2025-w-optional-molle-storage-pat-pending-bartact-33697114456107.jpg?v=1768848652" alt="Sun shades" loading="eager" onerror="this.style.opacity=0.3">
       <span>Sun Shades</span>
     </a>
     <a href="https://bartact.com/collections/car-truck-suv-utv-boat-fire-extinguishers-mounts" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🔥</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-roll-bar-accessories-fire-extinguisher-mount-only-fire-extinguisher-mount-for-jeep-wrangler-jlu-aluminum-w-optional-2-5-5-lb-fire-extinguisher-bartact-patent-pending-made-in-usa-1168061822.jpg?v=1763285067" alt="Fire extinguishers" loading="eager" onerror="this.style.opacity=0.3">
       <span>Fire Extinguishers</span>
     </a>
     <a href="https://bartact.com/collections/tailgate-accessories" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">🚗</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bartact-molle-accessories-black-molle-attachments-bartact-pals-molle-t-bar-heavy-duty-repair-female-male-buckle-combo-pair-of-2-copy-1174047423.jpg?v=1762463274" alt="Tailgate accessories" loading="eager" onerror="this.style.opacity=0.3">
       <span>Tailgate</span>
     </a>
     <a href="https://bartact.com/collections/cargo-tie-downs" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">📦</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/files/bull-strap-motor-vehicle-suspension-parts-diy-weld-on-limit-strap-tabs-1237903031.png?v=1778544310" alt="Cargo tie-downs" loading="eager" onerror="this.style.opacity=0.3">
       <span>Cargo Tie-Downs</span>
     </a>
     <a href="https://bullstrap.com/collections/air-suspension-kits" rel="sponsored" target="_blank" class="cat-card">
-      <span class="c-icon">💨</span>
+      <img class="c-icon" src="https://cdn.shopify.com/s/files/1/0936/7476/products/bull-strap-motor-vehicle-suspension-parts-single-double-triple-combo-limit-strap-clevis-29880853725227.jpg?v=1762459529" alt="Air suspension" loading="eager" onerror="this.style.opacity=0.3">
       <span>Air Suspension</span>
     </a>
   </div>
@@ -312,7 +311,7 @@
 <!-- ── FEATURED: CARLI SUSPENSION ─────────────────────────────────────────── -->
 <div class="section">
   <div class="section-header">
-    <h2>⚙️ Featured: Carli Suspension — Ford F-250/F-350 &amp; RAM HD</h2>
+    <h2>Featured: Carli Suspension — Ford F-250/F-350 &amp; RAM HD</h2>
     <p>The top-tier suspension system for heavy-duty truck owners. Available exclusively through authorized Turn 14 distributors like Bull Strap.</p>
   </div>
   <div class="featured-box">
@@ -323,7 +322,7 @@
       <a href="https://bullstrap.com/collections/carli-suspension" class="feat-cta" rel="sponsored" target="_blank">Shop Carli at Bull Strap →</a>
     </div>
     <div style="text-align:center;padding:16px">
-      <div style="color:#e8a000;font-size:2.5rem;margin-bottom:8px">🏗️</div>
+      <img src="https://cdn.shopify.com/s/files/1/0936/7476/files/bull-strap-motor-vehicle-suspension-parts-diy-weld-on-limit-strap-tabs-1237903031.png?v=1778544310" alt="Carli suspension" loading="eager" style="width:60px;height:60px;object-fit:cover;border-radius:6px;margin-bottom:8px" onerror="this.style.opacity=0.3">
       <div style="color:#e8a000;font-weight:700;font-size:1.1rem">From $2,275</div>
       <div style="color:#888;font-size:.8rem;margin-top:4px">Ford &amp; RAM HD</div>
     </div>
@@ -335,7 +334,7 @@
 <!-- ── FEATURED: WRANGLIATOR BAGS ─────────────────────────────────────────── -->
 <div class="section">
   <div class="section-header">
-    <h2>🎒 Featured: Wrangliator Door Storage Bags — Jeep Wrangler &amp; Bronco</h2>
+    <h2>Featured: Wrangliator Door Storage Bags — Jeep Wrangler &amp; Bronco</h2>
     <p>Bartact's Wrangliator bags replace your bare door panel with MOLLE-compatible storage — custom-fit for JL, JLU, JK, JKU, Gladiator, and Ford Bronco.</p>
   </div>
   <div class="featured-box" style="border-color:#c8470a">
@@ -346,7 +345,7 @@
       <a href="https://bartact.com/collections/wrangliator-door-storage-bags" class="feat-cta" style="background:#c8470a;color:#fff" rel="sponsored" target="_blank">Shop Wrangliator at Bartact →</a>
     </div>
     <div style="text-align:center;padding:16px">
-      <div style="color:#c8470a;font-size:2.5rem;margin-bottom:8px">🚪</div>
+      <img src="https://cdn.shopify.com/s/files/1/0936/7476/products/bartact-bags-and-pouches-black-cordura-nylon-1000d-medium-extreme-duffel-bag-21-x-14-x-14-5-bartact-29023051579435.jpg?v=1762457127" alt="Door storage bags" loading="eager" style="width:60px;height:60px;object-fit:cover;border-radius:6px;margin-bottom:8px" onerror="this.style.opacity=0.3">
       <div style="color:#c8470a;font-weight:700;font-size:1rem">MOLLE-Ready</div>
       <div style="color:#888;font-size:.8rem;margin-top:4px">Made in the USA</div>
     </div>
@@ -358,7 +357,7 @@
 <!-- ── TOP PICKS: AMAZON AFFILIATE ────────────────────────────────────────── -->
 <div class="section">
   <div class="section-header">
-    <h2>🛒 Amazon Picks — Popular Auto Accessories</h2>
+    <h2>Amazon Picks — Popular Auto Accessories</h2>
     <p>Top-rated accessories available on Amazon — floor mats, lighting, exterior upgrades, and more.</p>
   </div>
   <div class="prod-grid">
@@ -403,7 +402,7 @@
 
 <!-- ── BULL STRAP FOOTER ─────────────────────────────────────────────────── -->
 <div class="bs-footer">
-  <h3>🔧 96,000+ Performance Parts at Bull Strap</h3>
+  <h3>96,000+ Performance Parts at Bull Strap</h3>
   <p>Bull Strap is an authorized Turn 14 distributor carrying the full catalog of Carli, Bilstein, Fox, Rancho, 3D MAXpider, and more for Jeep, Ford, RAM, Toyota, and every serious off-road platform.</p>
   <a href="https://bullstrap.com" class="bs-btn" rel="sponsored" target="_blank">Visit Bull Strap →</a>
 </div>
